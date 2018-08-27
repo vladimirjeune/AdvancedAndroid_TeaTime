@@ -68,7 +68,7 @@ public class TeaMenuAdapter extends ArrayAdapter<Tea> {
             holder.image = (ImageView) convertView.findViewById(R.id.image);
             convertView.setTag(holder);
         } else {
-            holder = (ViewHolder) convertView.getTag();;
+            holder = (ViewHolder) convertView.getTag();
         }
 
         holder.imageTitle.setText(currentTea.getTeaName());
