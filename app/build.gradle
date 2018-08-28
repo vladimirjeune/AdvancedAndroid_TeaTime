@@ -28,6 +28,8 @@ dependencies {
     // Support annotations for androidTestCompile & compile MUST match
     androidTestCompile 'com.android.support:support-annotations:27.1.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.2'
+    // IntentsTestRule is in the above espresso-intents dependency
     // You need to add this dependency or you will not be able to use, ActivityTestRule
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
 }
