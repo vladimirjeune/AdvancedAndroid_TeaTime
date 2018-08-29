@@ -73,6 +73,7 @@ public class IdlingResourceMenuActivityTest {
     @Before
     public void registerIdlingResource() {
         if (mIdlingResource != null) {
+            mIdlingResource = mActivityTestRule.getActivity().getIdlingResource();
             Espresso.registerIdlingResources(mIdlingResource);
 //            IdlingRegistry.getInstance().register(mIdlingResource);  // This is the NEW way to do it
         }
